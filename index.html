@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentukan Zodiak Kamu!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌙 Tentukan Zodiak Kamu!</h1>
+        <form id="zodiac-form">
+            <div class="form-group">
+                <label for="day">Tanggal:</label>
+                <input type="number" id="day" min="1" max="31" required>
+            </div>
+
+            <div class="form-group">
+                <label for="month">Bulan:</label>
+                <input type="number" id="month" min="1" max="12" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Tahun:</label>
+                <input type="number" id="year" required>
+            </div>
+        </form>
+
+        <div class="button-group">
+            <button type="submit" form="zodiac-form">Cari</button>
+            <button type="reset" form="zodiac-form">Hapus</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
